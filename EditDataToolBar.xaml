@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="FunnyVodovoz.EditDataToolBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FunnyVodovoz"             
+             mc:Ignorable="d" >
+    <DockPanel>
+        <ToggleButton Click="AddButton_Click">
+            <Image Source="Pictures/addIcon.png" ToolTip="Добавить"/>
+        </ToggleButton>
+        <Separator />
+        
+        <Button Click="ChangeButton_Click">
+            <Image Source="Pictures/editIcon.png" ToolTip="Изменить"/>
+        </Button>
+        <Separator />
+        <Button Click="DeleteButton_Click">
+            <Image Source="Pictures/deleteIcon.png" ToolTip="Удалить"/>
+        </Button>
+    </DockPanel>
+        
+</UserControl>
